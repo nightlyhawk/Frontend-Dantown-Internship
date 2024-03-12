@@ -45,7 +45,7 @@ export default function ChatBlock(){
                     <Tab profile={item.profile} 
                         title={item.name} 
                         text={item.text} 
-                        unread={item.name !== data.name? 1 : 0} 
+                        unread={item.name !== data.who? 1 : 0} 
                         key={index} 
                         event={() => Open(
                             item.name,
