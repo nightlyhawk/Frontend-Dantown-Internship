@@ -15,7 +15,7 @@ export const TableHeading = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     padding-bottom: 3%;
 `
 export const TableExtraHead = styled.h1``

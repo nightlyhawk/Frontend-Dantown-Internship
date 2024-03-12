@@ -22,7 +22,7 @@ export const MenuWrapper = styled.div`
     background: white;
     display: flex;
     flex-direction: column;
-    gap: 3%;
+    gap: 2%;
     padding: 3% 0 0 0;
     animation: ${open} 1s ease;
     height: auto;

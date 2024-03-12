@@ -10,7 +10,7 @@ import { SwitchContext } from "@/context";
 
 
 export default function ChatBlock(){
-    const { open, toggleOpen, addData } = useContext(SwitchContext);
+    const { open, toggleOpen, data, addData } = useContext(SwitchContext);
     useEffect(() => {
         addData(
             ChatData[0].name,
@@ -45,7 +45,7 @@ export default function ChatBlock(){
                     <Tab profile={item.profile} 
                         title={item.name} 
                         text={item.text} 
-                        unread={item.unread} 
+                        unread={item.name !== data.name? 1 : 0} 
                         key={index} 
                         event={() => Open(
                             item.name,

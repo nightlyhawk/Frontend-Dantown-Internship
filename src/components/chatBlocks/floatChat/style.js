@@ -7,9 +7,10 @@ export const FloatWrapper = styled.div`
     display: flex;
     flex-direction: column;
     height: 262px;
-    width: 101%;
+    width: 21%;
+    position: fixed;
     bottom: 0;
-    transform: translate(-1rem, -1rem);
+    transform: translate(-1rem, -5rem);
     z-index: 1;
     background: white;
 `
