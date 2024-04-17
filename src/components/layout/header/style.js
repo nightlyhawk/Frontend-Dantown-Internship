@@ -18,7 +18,7 @@ export const HeaderContainer = styled.div`
 export const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    padding-bottom: 3%;
+    padding-bottom: 3rem;
     justify-content: space-between;
 `
 

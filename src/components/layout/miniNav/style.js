@@ -7,6 +7,7 @@ export const NavWrapper = styled.ul`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: 2rem;
     list-style: none;
 `
 

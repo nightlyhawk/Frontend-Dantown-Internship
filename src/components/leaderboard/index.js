@@ -1,4 +1,4 @@
-import { TableContainer, TableData, TableHead, TableHeader, TableHeading, TableIcon, TableProfile, TableInfo, TableRow, TableText, TableWrapper, TableProfileapper, TableBody, TableExtraHead } from "./style";
+import { TableContainer, TableData, TableHead, TableHeader, TableHeading, TableIcon, TableProfile, TableInfo, TableRow, TableText, TableWrapper, TableProfileapper, TableBody, TableExtraHead, FirstShape, PolygonText } from "./style";
 import Tag from "./tags";
 import { FriendsData } from "@/data";
 import dotdot from "../../assets/icons/dotdot.svg"
@@ -16,7 +16,7 @@ export default function LeaderBoard(){
             <TableContainer>
                 <TableHead>
                     <TableRow>
-                        <TableHeader>Rank</TableHeader>
+                        <TableHeader position='center'>Rank</TableHeader>
                         <TableHeader>Name</TableHeader>
                         <TableHeader>Category</TableHeader>
                         <TableHeader>Points</TableHeader>
@@ -25,7 +25,17 @@ export default function LeaderBoard(){
                 <TableBody>
                     {FriendsData.map((item, index) => (
                         <TableRow key={index}>
-                            <TableData none="none">{item.rank}</TableData>
+                            {item.rank === 1 ? 
+                                <TableData none="none">
+                                    <FirstShape>
+                                        <PolygonText>
+                                        {item.rank}
+                                        </PolygonText>
+                                    </FirstShape>
+                                </TableData>
+                                :
+                                <TableData none="none">{item.rank}</TableData>
+                            }
                             <TableData>
                                 <TableInfo>
                                     <TableProfile   bg={item.profile} />
