@@ -13,6 +13,6 @@ Subsequently make a Pull Request to the main branch
 
 You can use any Front-End Tooling of your choice be it styled-components or whatnot
 
-Host the Project and send the project link, alongside your CV to hire@godantown.com
+Host the Project and send the project link, alongside your CV to dantownhr@gmail.com
 
 Goodluck Guys!
