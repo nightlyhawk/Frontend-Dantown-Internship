@@ -17,8 +17,8 @@ export const TabText = styled.p`
 `
 
 export const TabImg = styled.div`
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 999px;
     background: ${({color}) => color};
 `
@@ -26,7 +26,7 @@ export const TabWrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     gap: 4%;
     margin-bottom: 1rem;
     cursor: pointer;

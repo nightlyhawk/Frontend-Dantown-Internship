@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <main style={{ display: "flex" }}> 
           <SideBar />
           {children}
-          <section style={{ width: "24%", display: "flex", flexDirection: "column", paddingTop: "2rem", paddingLeft: "2%", background: "rgb(243 247 247)" }}>
+          <section style={{ width: "26%", display: "flex", flexDirection: "column", paddingTop: "2rem", paddingLeft: "2%", background: "rgb(243 247 247)" }}>
             <MiniNav />
             <SwitchProvider>
               <ChatBlock />

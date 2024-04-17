@@ -7,14 +7,14 @@ export const CardContainer = styled.div`
     background: #E0F3F3;
     display: flex;
     justify-content: center;
-    height: 200px;
+    height: 170px;
     border: none;
     width: 100%;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
 `
 export const CardImg = styled(Image)`
-    height: 200px;
+    height: 140px;
 `
 export const CardWrapper = styled.div`
     display: flex;
