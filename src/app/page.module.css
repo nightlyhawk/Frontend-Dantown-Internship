@@ -27,6 +27,12 @@
   }
 }
 
+@media screen and (max-width: 858px){
+  .chat {  
+    width: 35%;
+  }
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

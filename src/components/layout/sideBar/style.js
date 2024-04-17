@@ -16,7 +16,7 @@ const open = keyframes`
 `
 
 export const MenuWrapper = styled.div`
-    width: 18%;
+    width: 100%;
     background: white;
     display: flex;
     flex-direction: column;

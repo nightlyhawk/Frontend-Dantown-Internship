@@ -12,9 +12,15 @@ export const CardContainer = styled.div`
     width: 100%;
     border-top-right-radius: 14px;
     border-top-left-radius: 14px;
+    @media screen and (max-width: 858px){
+        height: 150px;
+    }
 `
 export const CardImg = styled(Image)`
     height: 140px;
+    @media screen and (max-width: 858px){
+        height: 110px;
+    }
 `
 export const CardWrapper = styled.div`
     display: flex;
