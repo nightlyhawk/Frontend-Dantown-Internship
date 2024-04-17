@@ -27,9 +27,9 @@
   }
 }
 
-@media screen and (max-width: 858px){
+@media screen and (max-width: 994px){
   .chat {  
-    width: 35%;
+    width: 36%;
   }
 }
 

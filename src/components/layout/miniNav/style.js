@@ -20,6 +20,9 @@ export const MiniWrapper = styled.div`
     align-items: center;
     width: 50%;
     justify-content: space-between;
+    @media screen and (max-width){
+        width: 59%;
+    }
 `
 export const MiniText = styled.p`
     font-weight: 700;

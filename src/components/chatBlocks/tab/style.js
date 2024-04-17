@@ -30,6 +30,9 @@ export const TabWrapper = styled.div`
     gap: 4%;
     margin-bottom: 1rem;
     cursor: pointer;
+    @media screen and (max-width: 941px){
+        gap: 2%;   
+    }
 `
 export const TabLit = styled.div`
     display: flex;

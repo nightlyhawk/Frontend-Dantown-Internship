@@ -13,7 +13,7 @@ export const HeaderText = styled.p`
 export const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 63%;
 `
 export const HeaderWrapper = styled.div`
     display: flex;
