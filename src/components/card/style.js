@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
     background: #E0F3F3;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 170px;
     border: none;
     width: 100%;
