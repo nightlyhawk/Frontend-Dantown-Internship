@@ -1,14 +1,18 @@
 'use client'
-import { MenuIcon, MenuImg, MenuLink, MenuText, MenuWrapper } from './style'
+import { useState } from "react";
+import { MenuIcon, MenuImg, MenuLink, MenuText, MenuWrapper, Wrapper } from './style'
 import { MenuData } from '@/data';
 import logo from "../../../assets/images/logo.svg"
 import Category from './category';
 import { usePathname } from 'next/navigation';
+import SideBtn from '@/components/sideBtn';
 
 export default function SideBar(){
     const pathname = usePathname();     
-  return (
-    <MenuWrapper>
+    const [open, setOpen] = useState(false);
+    return (
+      <Wrapper view={open? '20%' : '1%'}>
+        <MenuWrapper view={open? 'flex' : 'none'}>
         <MenuImg src={logo} alt="logo" />
         {MenuData && MenuData.map((item, index) => {
                 const isActive = pathname.startsWith(item.href);
@@ -25,5 +29,7 @@ export default function SideBar(){
         }
         <Category />
     </MenuWrapper>
+    <SideBtn func={() => setOpen(!open)} state={open} />
+    </Wrapper>
   )
 }

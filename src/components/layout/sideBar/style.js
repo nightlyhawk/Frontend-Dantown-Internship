@@ -7,13 +7,11 @@ import Image from 'next/image';
 const open = keyframes`
     from {
         opacity: 0;
-        position: relative;
-        top: -130vh;
+        left: -15rem;
     }
     to {
         opacity: 1;
-        position: relative;
-        top: 0;
+        left: 0;
     }
 `
 
@@ -24,8 +22,23 @@ export const MenuWrapper = styled.div`
     flex-direction: column;
     gap: 2%;
     padding: 3% 0 0 0;
-    animation: ${open} 1s ease;
     height: auto;
+    @media screen and (max-width: 1148px){
+        width: 98%;
+        display: ${({view}) => view};
+        animation: ${open} 1s ease;
+    }
+`
+export const Wrapper = styled.section`
+    display: flex;
+    width: 18%;
+    animation: ${open} 1s ease;
+    @media screen and (max-width: 1148px){
+        position: absolute;
+        animation: ${open} 1s ease;
+        width: ${({view}) => view};
+        z-index: 1;
+    }
 `
 
 export const MenuLink = styled(Link)`

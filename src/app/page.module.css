@@ -7,6 +7,26 @@
   min-height: 100vh;
 }
 
+.dashboard {
+  width: 63%;
+}
+
+@media (max-width: 1148px) {
+  .dashboard {  
+    width: 67%;
+  }
+}
+
+.chat {
+  width: 24%;
+}
+
+@media (max-width: 1148px) {
+  .chat {  
+    width: 33%;
+  }
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
