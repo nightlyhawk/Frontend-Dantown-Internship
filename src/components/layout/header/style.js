@@ -8,6 +8,7 @@ export const HeaderHeading = styled.h1`
 
 export const HeaderText = styled.p`
     text-align: left;
+    color: #8695A0;
 `
 
 export const HeaderContainer = styled.div`
