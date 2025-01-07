@@ -34,6 +34,7 @@ export const CardHeading = styled.h3`
 
 export const CardText = styled.p`
     text-align: center;
+    color:  #8695A0;
 `
 
 export const CardDetail = styled.div`
